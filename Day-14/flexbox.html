@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .cnt {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border: 6px solid rgb(205, 27, 39);
+      }
+      .cnt h1 {
+        color: rgb(20, 18, 18);
+        border: 3px solid rgb(227, 220, 12);
+        width: 22%;
+        height: 300px;
+      }
+
+      @media (min-width: 300px) and (max-width: 600px) {
+        .cnt {
+          flex-direction: column;
+        }
+        .cnt h1 {
+          width: 90%;
+          margin: auto;
+          margin-bottom: 15px;
+        }
+      }
+      @media (min-width: 601px) and (max-width: 900px) {
+        .cnt {
+          flex-wrap: wrap;
+        }
+        .cnt h1 {
+            gap: 10px;
+          width: 45%;
+          margin-bottom: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cnt">
+      <h1>1</h1>
+      <h1>2</h1>
+      <h1>3</h1>
+      <h1>4</h1>
+      <h1>5</h1>
+    </div>
+  </body>
+</html>
